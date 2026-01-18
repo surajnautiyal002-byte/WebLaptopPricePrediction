@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laptop Price Predictor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="paper-body">
+
+  <div class="paper-card">
+
+    <div class="icon-circle">💻</div>
+    <h2 class="paper-title">Laptop Price Predictor</h2>
+    <p class="paper-subtitle">Enter laptop specifications</p>
+
+    <div class="field">
+      <label>Screen Size (inches)</label>
+      <input id="inch" type="number">
+    </div>
+
+    <div class="field">
+      <label>RAM Size (GB)</label>
+      <input id="ram" type="number">
+    </div>
+
+    <div class="field">
+      <label>Weight (kg)</label>
+      <input id="weight" type="number">
+    </div>
+
+    <div class="field">
+      <label>Total Memory (GB)</label>
+      <input id="memory" type="number">
+    </div>
+
+    <div class="field">
+      <label>CPU Tier (1 = Low, 2 = Mid, 3 = High)</label>
+      <input id="cpu" type="number">
+    </div>
+
+    <div class="field">
+      <label>GPU Tier (1 = Low, 2 = Mid, 3 = High)</label>
+      <input id="gpu" type="number">
+    </div>
+
+    <div class="field">
+      <label>Total Pixels (1920 × 1080 = 2073600)</label>
+      <input id="pixels" type="number">
+    </div>
+
+    <button class="paper-btn" onclick="predict()">Predict Price</button>
+    <div id="result" class="paper-result"></div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
